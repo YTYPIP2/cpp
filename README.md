@@ -58,7 +58,22 @@
 
 **Рисунок 3: Код файла School.h**
 
-![Код заголовочного файла School.h](scr/03_school_h.png)
+#pragma once
+
+#include <string>
+#include "Classroom.h"
+
+class School {
+private:
+    std::string name;    // Íàçâàíèå øêîëû
+    Classroom classroom; // Êîìïîçèöèÿ: êàáèíåò ïðèíàäëåæèò øêîëå
+
+public:
+    School(const std::string& schoolName, int roomNumber, int roomCapacity);
+    ~School();
+
+    void print() const;
+};
 
 **Рисунок 4: Код файла School.cpp**
 
