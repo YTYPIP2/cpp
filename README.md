@@ -65,8 +65,8 @@
 
 class School {
 private:
-    std::string name;    // Íàçâàíèå øêîëû
-    Classroom classroom; // Êîìïîçèöèÿ: êàáèíåò ïðèíàäëåæèò øêîëå
+    std::string name;    
+    Classroom classroom; 
 
 public:
     School(const std::string& schoolName, int roomNumber, int roomCapacity);
